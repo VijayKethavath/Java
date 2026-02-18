@@ -71,7 +71,7 @@ public class CustomerAccount {
 			 System.out.println("Invalid account");
 		 }
   }
-  public void setbalance(String bal) {
+  public void setbalance(int bal) {
 	  if(bal!=null && bal>0) {
 		  this.balance=bal;
 	  }
