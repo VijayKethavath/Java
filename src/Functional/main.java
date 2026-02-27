@@ -21,7 +21,7 @@ public class main {
 		
 	}
 
-	public static void main(String[] args) {
+	public static void Main(String[] args) {
 		
 		Numbercheck checkprime=new Numbercheck() {
 			public boolean checkNumber(int num) {
