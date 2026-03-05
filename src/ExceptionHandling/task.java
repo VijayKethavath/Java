@@ -45,7 +45,7 @@ public class task {
 			System.out.println(e.getMessage());
 		}
 		catch( InvaildAgeofTyre e) {
-			System.out.println(e.getMessage();
+			System.out.println(e.getMessage());
 		}
 		catch( InvaildAgeofEngine e) {
 			System.out.println(e.getMessage());
