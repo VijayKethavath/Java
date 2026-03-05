@@ -1,54 +1,60 @@
 package ExceptionHandling;
-class InvaildBatteryException extends Exception{
-	InvalidBatteryException(String message){
-		super(message);
+class InvaildAgeofBattery extends Exception{
+	public InvaildAgeofBattery(String msg) {
+		super(msg);
 	}
 }
-class InvaildtyreException extends Exception{
-	InvalidtyreException(String message){
-		super(message);
+class InvaildAgeofTyre extends Exception{
+	public InvaildAgeofTyre(String msg) {
+		super(msg);
 	}
 }
-class InvaildEngineException extends Exception{
-	InvaildEngineException(String message){
-		super(message);
+class InvaildAgeofEngine extends Exception{
+	public InvaildAgeofEngine(String msg) {
+		super(msg);
 	}
 }
-class vehicle {
-	void checkvehicle(int bat,int ty,int En) throws InvaildBatteryException,InvaildtyreException, InvaildEngineException{
-		if(bat<2) {
-			throw new InvaildBatteryException("Not valid");
+
+class Vehicle{
+	public void checkAge(int bry,int ty,int en) throws InvaildAgeofBattery , InvaildAgeofTyre, InvaildAgeofEngine{
+		if(bry<2) {
+			throw new InvaildAgeofBattery("Battery is out of Warranty");
 		}
-		else if(ty<5) {
-			throw new  InvaildtyreException("not valid");
+		else if(ty<10) {
+			throw new  InvaildAgeofTyre("Tyre is out of Warranty");
+		}
+		else if(en<10) {
+			throw new  InvaildAgeofEngine("Engine is out of Warranty");
+		}
+		else {
+			System.out.println("vehicle is under Warranty");
+		}
+		
 			
 		}
-		else if(En<4) {
-			throw new InvaildEngineExpception("not vaild");
-		}
 	}
-}
 
 public class task {
 
 	public static void main(String[] args) {
-		vehicle vh =new vehicle();
+		Vehicle vh=new Vehicle();
 		try {
-			vh.checkvehicle(1,2,4);
+			vh.checkAge(3,1,11);
 		}
-		catch(InvaildBatteryException e){
-			System.out.println(e);
-			
+		catch( InvaildAgeofBattery e) {
+			System.out.println(e.getMessage());
 		}
-		catch(InvaildtyreException e){
-			System.out.println(e);
-			
+		catch( InvaildAgeofTyre e) {
+			System.out.println(e.getMessage();
 		}
-		catch(InvaildEngineException e){
-			System.out.println(e);
-			
+		catch( InvaildAgeofEngine e) {
+			System.out.println(e.getMessage());
+		}
+		finally {
+			System.out.println("....Vehicle check Done....");
 		}
 
 	}
+	
 
 }
