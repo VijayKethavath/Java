@@ -1,25 +1,8 @@
 package ExceptionHandling;
 import java.util.Scanner;
 
-class CarStopped extends Exception{
-	public CarStopped(String message) {
-		super(message);
-	}
-}
-class CarPuncture extends Exception{
-	public CarPuncture(String message) {
-		super(message);
-	}
-}
-class CarHeat extends Exception{
-	public CarHeat(String message) {
-		super(message);
-	}
-}
-
-
 public class Cartest {
-	
+
 	public static void stop(String msg) throws CarStopped {
 		if(msg.equals("stop")) {
 			throw new CarStopped("Car is stopped");
@@ -28,7 +11,7 @@ public class Cartest {
 			System.out.println("Car not stalled");
 		}
 	}
-	
+
 	public static void puncture(String msg) throws CarPuncture{
 		if(msg.equals("puncture")) {
 			throw new CarPuncture("Car is Punctured");
@@ -47,30 +30,52 @@ public class Cartest {
 	}
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter input:");
-//		String input=sc.nextLine();
+		
 		try {
-			String input=sc.nextLine();
-			stop(input);
-		}catch(CarStopped e) {
+			stop("stop");
+		}
+		catch(CarStopped e) {
 			System.out.println("Carstopped: "+e.getMessage());
 		}
 		try {
-			String input=sc.nextLine();
-			puncture(input);
-		}catch(CarPuncture e) {
+			puncture("not puncture");
+		}
+
+		catch(CarPuncture e) {
 			System.out.println("Punctured :"+e.getMessage());
 		}
 		try {
-			int input=sc.nextInt();
-			carHeat(input);
-		}catch(CarHeat e) {
+			carHeat(60);
+		}
+		catch(CarHeat e) {
 			System.out.println("Heat:"+e.getMessage());
 		}
-		sc.close();
-		
 
 	}
 
 }
+
+
+
+//Scanner sc=new Scanner(System.in);
+//		System.out.println("Enter input:");
+////		String input=sc.nextLine();
+//		try {
+//			String input=sc.nextLine();
+//			stop(input);
+//		}catch(CarStopped e) {
+//			System.out.println("Carstopped: "+e.getMessage());
+//		}
+//		try {
+//			String input=sc.nextLine();
+//			puncture(input);
+//		}catch(CarPuncture e) {
+//			System.out.println("Punctured :"+e.getMessage());
+//		}
+//		try {
+//			int input=sc.nextInt();
+//			carHeat(input);
+//		}catch(CarHeat e) {
+//			System.out.println("Heat:"+e.getMessage());
+//		}
+//		sc.close();

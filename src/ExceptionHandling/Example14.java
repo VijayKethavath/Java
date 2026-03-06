@@ -22,7 +22,7 @@ public class Example14 {
 		public static void main(String[] args) {
 			try {
 				new Example14().getdat(1);
-				new Example14().getage(18);
+				new Example14().getage(15);
 			}catch(RuntimeException e) {
 				e.printStackTrace();
 			}
