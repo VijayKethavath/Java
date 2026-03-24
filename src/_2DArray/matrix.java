@@ -66,6 +66,16 @@ public class matrix {
 			}
 			
 		}
+		
+		System.out.println("");
+		System.out.println("Matrix Anti Daigonal :");
+		for(int i=0;i<row;i++) {
+			for(int j=0;j<col;j++) {
+				if(i+j==row-1)
+					System.out.print(c[i][j]+" ");
+			}
+			
+		}
 		sc.close();
 		
 
