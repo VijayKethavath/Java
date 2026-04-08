@@ -15,7 +15,7 @@ class manager extends Thread{
 	}
 }
 
-public class multithreading {
+public class Multithreading {
 
 	public static void main(String[] args) {
 		System.out.println("Hello");
