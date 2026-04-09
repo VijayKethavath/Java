@@ -8,7 +8,7 @@ public class stream {
 
 	public static void main(String[] args) {
 		try {
-			String copy=("C:\\Users\\ketha\\Desktop\\JAVA\\IOstream\\cop.txt");
+			String copy=("C:\\Users\\ketha\\Desktop\\JAVA\\IOstream\\copy.txt");
 			String paste=("C:\\Users\\ketha\\Desktop\\JAVA\\IOstream\\paste.txt");
 			
 			FileInputStream fis = new FileInputStream(copy);
@@ -19,7 +19,8 @@ public class stream {
 				fos.write(data);
 			}
 			
-			System.out.println("Successfull");
+			System.out.println("Data is Successfull copied from "
+					+ "copy.txt and pasted into paste.txt.");
 			
 			fos.close();
 			fis.close();
@@ -29,10 +30,6 @@ public class stream {
 			System.out.println(e.getMessage());
 		}
 			
-			
-			
-			
-		
 
 	}
 

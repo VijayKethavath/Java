@@ -14,10 +14,15 @@ public class OutputStream {
 			System.out.println("File is available");
 			
 			FileOutputStream fos=new FileOutputStream(location,true);
-			String str="Hello there ";
+			String str="JAVA is a powerful programming "
+					+ "language for building application ";
+			
 			byte [] bt=str.getBytes();
 			fos.write(bt);
 			fos.close();
+			
+			System.out.println("Data is succesfully written in the file");
+			
 		}
 		else {
 			System.out.println("File is not Available");

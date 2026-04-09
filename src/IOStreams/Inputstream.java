@@ -6,7 +6,7 @@ import java.io.IOException;
 public class Inputstream {
 
 	public static void main(String[] args) throws IOException {
-		String location=("C:\\Users\\ketha\\Desktop\\JAVA FS\\IOstream\\test1.txt");
+		String location=("C:\\Users\\ketha\\Desktop\\JAVA\\IOstream\\text1.txt");
 		File fs=new File(location);
 
 		if(fs.exists()) System.out.println("The file is available");
@@ -19,9 +19,6 @@ public class Inputstream {
 			else System.out.println("File is not Created");
 
 		}
-
-
-
 
 	}
 
