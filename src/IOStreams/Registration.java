@@ -25,7 +25,7 @@ public class Registration {
     	fw.write(name+","+pass+"\n");
     	fw.close();	
     	
-    	System.out.println("Registration Successful\n\nThank you for registration. ");
+    	System.out.println("\nRegistration Successful\nThank you for registration.\n ");
     }
     
     

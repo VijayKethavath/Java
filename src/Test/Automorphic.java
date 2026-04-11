@@ -9,13 +9,13 @@ public class Automorphic {
 		int num=sc.nextInt();
 		int temp=num;
 		int square=num*num;
-		while(temp>0) {
-			if(temp%10!=square%10) {
+		while(temp>0) {  
+			if(temp%10!=square%10) {  
 				System.out.println(num+": is not a Automorphic Number");
 				sc.close();
 				return;
 			}
-			temp/=10;
+			temp/=10; 
 			square/=10;
 		} 
 		System.out.println(num+": is  a Automorphic Number");
