@@ -72,7 +72,7 @@ public class CustomerAccount {
 		 }
   }
   public void setbalance(int bal) {
-	  if(bal!=null && bal>0) {
+	  if(bal !=null && bal>0) {
 		  this.balance=bal;
 	  }
 	  else {
