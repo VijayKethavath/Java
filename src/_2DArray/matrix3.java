@@ -2,8 +2,8 @@ package _2DArray;
 
 public class matrix3 {
  public static void main(String[] args) {
-		int [][]a= {{1,2,3},{1,2,3},{1,2,3}};
-		int [][]b= {{1,2,3},{1,2,3},{1,2,3}};
+		int [][]a= {{1,2},{3,4}};
+		int [][]b= {{4,3},{2,1}};
 			
 		int row=a.length;
 		int col=a[0].length;

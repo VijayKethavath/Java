@@ -4,7 +4,7 @@ public class localInner {
 	public void method(){
 		class Inner{
 			public void display() {
-				System.out.println("This the Local inner class");
+				System.out.println("This is Local inner class");
 			}
 		}
 		

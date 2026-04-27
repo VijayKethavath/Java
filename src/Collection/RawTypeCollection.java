@@ -35,7 +35,6 @@ public class RawTypeCollection {
 			else if(obj instanceof String) System.out.println("String:"+ obj);
 			else System.out.println("Other type:" +obj);
 		}
-
 	}
 
 }
