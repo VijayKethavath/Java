@@ -25,13 +25,14 @@ public class BankMain {
 		System.out.println("-------------------");
 		System.out.println("1.Desposit\n 2.withdraw");
 		
+		
 		SavingAccount scc= new SavingAccount(bal);
 		
 		
 	    boolean choice=false;
 	    
 	    do{
-	    	int option;
+	    	int option=0;
 	    	
 	    	switch(option){
 	    	case 1:{
@@ -43,9 +44,7 @@ public class BankMain {
 	    }
 	    }
 	    	while(choice);
-	    {
-	    	break;
-	    }
+	    
 	    
 		sc.close();
 
