@@ -15,6 +15,7 @@ public class Operators {
 		System.out.println("Multiplication :"+mul.operator(4, 2));
 		System.out.println("Divison :"+div.operator(4, 2));
 
+		
 	}
 
 }
